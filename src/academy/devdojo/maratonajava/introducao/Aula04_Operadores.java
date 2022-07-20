@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.introducao;
 
 public class Aula04_Operadores {
+
     public static void main(String[] args) {
         // + - / *
         int numero01 = 10;
@@ -37,6 +38,20 @@ public class Aula04_Operadores {
         System.out.println("isDentroDaLeiMaiorQueTrinta " + isDentroDaLeiMaiorQueTrinta);
         System.out.println("isDentroDaLeiMenorQueTrinta " + isDentroDaLeiMenorQueTrinta);
 
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 10000;
+        float valorPlaystation = 5000F;
+        boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
+        System.out.println("isPlaystationCincoCompravel " + isPlaystationCincoCompravel);
 
+        // = += -= /= %=
+        double bonus = 1800;
+        bonus += 1000;
+        System.out.println(bonus);
+
+        // ++ --
+        int contador = 0;
+        contador++;
+        System.out.println(contador);
     }
 }
